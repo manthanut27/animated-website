@@ -66,7 +66,7 @@ const Gallery = () => {
 						</h1>
 					</div>
 					<div className=" flex items-end justify-end ">
-						<p className="text-4xl w-1/2 text-white">
+						<p className="text-4xl w-1/2 text-white font-[font2] mb-22">
 							&nbsp;&nbsp;&nbsp;Japan’s culture is a powerful blend of deep-rooted tradition and modern innovation. From fast-paced world of cutting-edge technology and pop culture, Japan maintains a unique balance between past and present.
 						</p>
 					</div>

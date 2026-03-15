@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Gallery from './pages/Gallery'
 import Nature from './pages/Nature'
+import Navbar from './componets/navigation/navbar'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <div>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />

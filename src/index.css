@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
-
 @font-face {
   font-family: font1;
   src: url(../fonts/JuliusSansOne-Regular.ttf);
+}
+@font-face {
+  font-family: font2;
+  src: url(../public/fonts/Datatype-VariableFont_wdth\,wght.ttf);
 }
 
 *, *::before, *::after {
@@ -12,9 +15,6 @@
   padding: 0;
 }
 
-html, body, #root {
-  height: 100%;
-  width: 100%;
+body{
   background-color: #262747;
 }
-
