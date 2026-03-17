@@ -57,7 +57,7 @@ const Gallery = () => {
 					<img ref={imageRef} className="rounded-3xl object-cover" src="../images/pic1.jpg" />
 				</div>
 				<div className="relative font-[font1]">
-					<div className='flex justify-center text-white pt-[60vh]'>
+					<div className='flex justify-center text-white pt-[10vh]'>
 						<h1
 							style={{ marginTop: "50vh" }}
 							className="text-[15vw] text-center uppercase leading-[15vw]"

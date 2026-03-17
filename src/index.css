@@ -6,15 +6,31 @@
 }
 @font-face {
   font-family: font2;
-  src: url(../public/fonts/Datatype-VariableFont_wdth\,wght.ttf);
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  src: url(../fonts/Datatype-VariableFont_wdth\,wght.ttf);
 }
 
 body{
   background-color: #262747;
+}
+.moveX{
+  animation-name: moveAnimation ;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.moveLink{
+  opacity: 0;
+  transition: all  ease 0.3s;
+}
+.link:hover .moveLink{
+  opacity: 1;
+ 
+}
+@keyframes moveAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
 }
