@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Gallery from './pages/Gallery'
 import Nature from './pages/Nature'
 import Navbar from './componets/navigation/navbar'
-import FullSreenNav from './componets/navigation/FullSreenNav'
+import FullScreenNav from './componets/navigation/FullScreenNav'
 
 
 function App() {
@@ -13,13 +13,13 @@ function App() {
   return (
     <>
       <div>
-        {/* <Navbar /> */}
-        <FullSreenNav />
-        {/* <Routes>
+        <Navbar />
+        <FullScreenNav />
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/nature" element={<Nature />} />
-        </Routes> */}
+        </Routes>
       </div>
     </>
   )
