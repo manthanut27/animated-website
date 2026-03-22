@@ -3,29 +3,35 @@ import { NavbarContext } from '../../context/NavContext'
 
 const navbar = () => {
 
-  const navColourRef = useRef(null);
+  const navGreenRef = useRef(null)
   const [navOpen, setNavOpen] = useContext(NavbarContext)
+  
 
   return (
-    <div className='flex fixed top-0 w-full items-start justify-between z-4  text-[#3060a3] text-4xl font-[font2] uppercase ' >
-      <div >
-        <h1 className='font-[font2] p-2 '>Japan</h1>
+    <div className='z-4 flex fixed top-0 w-full items-start justify-between'>
+      <div className='lg:p-5 p-2 '>
+        <div className='lg:w-36 w-24'>
+          <div >
+            <h1 className='font-[font2] p-2 text-[2rem] lg:text-[2.5rem] text-[#2176b1]'>Japan</h1>
+          </div>
+        </div>
       </div>
-      <div onClick={()=>setNavOpen(true)} onMouseEnter={() => {
-        navColourRef.current.style.height = "100%"
+      <div onClick={() => {
+        setNavOpen(true)
+      }} onMouseEnter={() => {
+        navGreenRef.current.style.height = '100%'
       }}
         onMouseLeave={() => {
-          navColourRef.current.style.height = "0%"
+          navGreenRef.current.style.height = '0%'
         }}
-        className='relative h-14 w-[15vw] bg-[#36569c]'>
-        <div ref={navColourRef} className='bg-[#1f79b2] transition-all duration-300 absolute top-0 h-0 w-full ' ></div>
-        <div className=' relative h-full px-12 flex flex-col gap-1.5 justify-center items-end' >
-          <div className='w-18 h-0.5 bg-white'></div>
-          <div className='w-10 h-0.5 bg-white'></div>
+        className='lg:h-16 h-10 bg-[#2175b0] relative lg:w-[16vw] w-48'>
+        <div ref={navGreenRef} className='bg-[#94c4e7] transition-all absolute top-0 h-0 w-full'></div>
+        <div className='relative h-full lg:px-12 px-8 flex flex-col justify-center items-end lg:gap-1.5 gap-0.5'>
+          <div className="lg:w-18 w-12 h-0.5 bg-white"></div>
+          <div className="lg:w-10 w-6 h-0.5 bg-white"></div>
         </div>
       </div>
     </div>
   )
 }
-
 export default navbar

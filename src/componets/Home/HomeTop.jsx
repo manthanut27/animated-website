@@ -4,18 +4,18 @@ import Video from './Video.jsx'
 const HomeTop = () => {
   return (
     <>
-      <div className='font-[font1] pt-5 text-center' >
-        <div className='text-[4vw] uppercase leading-[10vw] text-[] justify-center flex items-center bg-gradient-to-r from-[#6aaed6] to-[#3e4992] bg-clip-text text-transparent' >
+      <div className='font-[font1] pt-5 lg:mt-0 mt-72 text-center px-4 lg:px-0' >
+        <div className='text-[9vw] lg:text-[4vw] uppercase leading-[14vw] lg:leading-[10vw] justify-center flex items-center text-[#375599]' >
           culture of Japan
         </div>
-        <div className='text-[4vw] uppercase leading-[10vw] text-[] justify-center flex items-center bg-gradient-to-r from-[#6aaed6] to-[#3e4992] bg-clip-text text-transparent'  >
-          Explore the rich 
-          <div className='h-[9vw]  rounded-full mt-2 overflow-hidden'>
+        <div className='text-[9vw] lg:text-[4vw] uppercase leading-[14vw] lg:leading-[10vw] justify-center flex items-center text-[#375599]'  >
+          Explore 
+          <div className='h-[14vw] lg:h-[9vw]  rounded-full mt-2 overflow-hidden'>
              <Video />
-          </div>culture
+          </div> the  
         </div>
-        <div className='text-[4vw] uppercase leading-[10vw] text-[] justify-center flex items-center bg-gradient-to-r from-[#6aaed6] to-[#3e4992] bg-clip-text text-transparent' >
-          of Japan with us
+        <div className='text-[9vw] lg:text-[4vw] uppercase leading-[14vw] lg:leading-[10vw] justify-center flex items-center text-[#375599]' >
+          rich culture of Japan with us
         </div>
       </div>
     </>

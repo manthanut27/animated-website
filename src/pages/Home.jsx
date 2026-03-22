@@ -1,4 +1,3 @@
-import React from "react";
 import Video from "../componets/Home/Video";
 import HomeTop from "../componets/Home/HomeTop";
 import HomeBottom from "../componets/Home/HomeBottom";

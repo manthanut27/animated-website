@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import { NavbarContext } from '../../context/NavContext'
+import { Link } from 'react-router-dom'
 
 const FullScreenNav = () => {
   const fullNavLinksRef = useRef(null)
@@ -95,8 +96,10 @@ const FullScreenNav = () => {
         </div>
         <div className='py-35' >
           <div className='link origin-top relative  border-t border-white'>
-            <h1 className='font-[font2] text-[8vw] leading-[0.8] text-center uppercase'>Nature</h1>
-            <div className='moveLink absolute flex top-0 bg-black'>
+            <Link to='/nature' onClick={() => setNavOpen(false)} className='block'>
+              <h1 className='font-[font2] text-[8vw] leading-[0.8] text-center uppercase'>Nature</h1>
+            </Link>
+            <div className='moveLink hidden lg:flex absolute top-0 bg-black'>
               <div className='moveX flex  items-center'>
                 <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] text-center uppercase'>Nature of japan </h2>
                 <img className='h-32 rounded-full w-60 shrink-0 object-cover' src="../images/sidebar.avif" alt="Project 1" />
@@ -114,8 +117,10 @@ const FullScreenNav = () => {
             </div>
           </div>
           <div className='link origin-top relative  border-t border-white'>
-            <h1 className='font-[font2] text-[8vw] leading-[0.8] text-center uppercase'>Gallery</h1>
-            <div className='moveLink absolute flex top-0 bg-black'>
+            <Link to='/gallery' onClick={() => setNavOpen(false)} className='block'>
+              <h1 className='font-[font2] text-[8vw] leading-[0.8] text-center uppercase'>Gallery</h1>
+            </Link>
+            <div className='moveLink hidden lg:flex absolute top-0 bg-black'>
               <div className='moveX flex  items-center'>
                 <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] text-center uppercase'>Gallery of japan </h2>
                 <img className='h-32 rounded-full w-60 shrink-0 object-cover' src="../images/sidebar2.avif" alt="Project 1" />
@@ -134,7 +139,7 @@ const FullScreenNav = () => {
           </div>
           <div className='link origin-top relative  border-t border-white'>
             <h1 className='font-[font2] text-[8vw] leading-[0.8] text-center uppercase'>About</h1>
-            <div className='moveLink absolute flex top-0 bg-black'>
+            <div className='moveLink hidden lg:flex absolute top-0 bg-black'>
               <div className='moveX flex  items-center'>
                 <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] text-center uppercase'>About of japan </h2>
                 <img className='h-32 rounded-full w-60 shrink-0 object-cover' src="../images/sidebar4.avif" alt="Project 1" />
@@ -153,7 +158,7 @@ const FullScreenNav = () => {
           </div>
           <div className='link origin-top relative  border-y border-white'>
             <h1 className='font-[font2] text-[8vw] leading-[0.8] text-center uppercase'>Contact</h1>
-            <div className='moveLink absolute flex top-0 bg-black'>
+            <div className='moveLink hidden lg:flex absolute top-0 bg-black'>
               <div className='moveX flex  items-center'>
                 <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] text-center uppercase'>Contact of japan </h2>
                 <img className='h-32 rounded-full w-60 shrink-0 object-cover' src="../images/sidebar3.avif" alt="Project 1" />
